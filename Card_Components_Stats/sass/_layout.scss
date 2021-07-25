@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Open Sans";
+    line-height: 1.6;
+}
+
+body {
+    background-color: $color-primary-dark;
+    color: $color-neutral-1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    // max-width: $bp-desktop;
+    // display: block;
+    width: 100vw;
+    max-width: $desktop;
+    height: 95vh;
+    // width: 80%;
+    padding: 6rem 4rem;
+
+    @media screen and (max-width: $bp) {
+        padding: 4rem 3rem;
+    }
+}
+
+.attribution {
+    background-color: $color-primary;
+    color: $color-neutral-2;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    a:link,
+    a:visited {
+        color: $color-accent;
+        text-decoration: none;
+    }
+}

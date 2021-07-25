@@ -1,0 +1,151 @@
+.card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 830px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    font-size: 10px;
+  }
+}
+
+.card > * {
+  flex: 1 100%;
+}
+
+.card__content {
+  background: #1b1938;
+  padding: 5rem 3rem;
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 830px) {
+  .card__content {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card__content {
+    padding: 3rem 2rem;
+  }
+}
+
+.card__title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 830px) {
+  .card__title {
+    font-size: 2rem;
+  }
+}
+
+.card__title .accent {
+  color: #aa5cdb;
+}
+
+.card__description {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: justify;
+  margin: 2rem auto;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.card__ratings {
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5rem auto 1.5rem;
+}
+
+.card__ratings .rating {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.card__ratings .value {
+  font-size: 1.75rem;
+  color: white;
+  font-weight: 700;
+}
+
+.card__image {
+  background: linear-gradient(to right, #1b1938, rgba(170, 92, 219, 0.6));
+  border-radius: 0 20px 20px 0;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  z-index: -1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Open Sans";
+  line-height: 1.6;
+}
+
+body {
+  background-color: #090b1a;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  max-width: 1440px;
+  height: 95vh;
+  padding: 6rem 4rem;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 4rem 3rem;
+  }
+}
+
+.attribution {
+  background-color: #1b1938;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: #aa5cdb;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
